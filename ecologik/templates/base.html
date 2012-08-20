@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %} &bull; Ecologik Landscaping</title>
+		<link rel='stylesheet' href='{{ STATIC_URL }}styles/style.css' />			
+    </head>
+    <body>
+        <div id='container'>
+            <div id='header'>
+                <a href='{% url index %}' id='logo'></a>
+                <div id='nav'>
+                    <ul>
+                        <li><a href='{% url services %}'{% if page == 'services' %} class='selected'{% endif %}>Services</a></li>
+                        <li><a href='{% url plants %}'{% if page == 'plants' %} class='selected'{% endif %}>Plants</a></li>
+                        <li><a href='{% url about %}'{% if page == 'about' %} class='selected'{% endif %}>About Us</a></li>
+                        <li><a href='{% url contact %}'{% if page == 'contact' %} class='selected'{% endif %}>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id='content'>
+				{% block content %}{% endblock %}
+            </div>
+            <div id='footer'>
+            </div>
+        </div>
+    </body>
+</html>
