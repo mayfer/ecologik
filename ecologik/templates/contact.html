@@ -1,7 +1,32 @@
 {% extends "base.html" %}
-{% block title %}Home{% endblock %}
+{% block title %}Contact{% endblock %}
+
 {% block content %}
 
-	contact
+<div id='contact' class='fullbox'>
+    <h1>Get a Free Quote</h1>
+    <form>
+        <p>Our staff is ready to answer any questions you might have.<br />
+            We will be in touch with you within two business days.</p>
+        <input type='text' placeholder='Your name' />
+        <input type='text' placeholder='your@email.address' />
+        <textarea placeholder='Your message'></textarea>
+        <button type='submit'>Submit</button>
+    </form>
+</div>
 
+<div class='fullbox'>
+    <h1>Address</h1>
+    <blockquote>
+        <img src='http://maps.google.com/maps/api/staticmap?center=49.277977,-123.135623&amp;zoom=15&amp;markers=size:small|49.277977,-123.135623&amp;path=color:0x0000FF80|weight:5|37.41448,-122.09415&amp;size=300x200&amp;sensor=false' style='float: left; border-radius: 5px;'/>
+        <p style='float: left; margin-left: 20px; font-size: 20px;'>
+        We can also be contacted at:<br /><br />
+        408-1111 Beach Ave.<br />
+        Vancouver, BC<br />
+        V6E 1T9<br /><br />
+        P: 778-858-8449
+        </p>
+        <div class='clear'></div>
+    </blockquote>
+</div>
 {% endblock %}
