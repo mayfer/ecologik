@@ -1,5 +1,5 @@
-html, body { padding: 0; margin: 0; background: url('../images/extra_clean_paper.png'); }
-#container { margin: 0 auto; width: 960px; background: #719684 url('../images/bg_farmer_960.jpg') top center no-repeat; box-shadow: 0 0 25px #aaa; }
+html, body { padding: 0; margin: 0; background: url('../images/leather.png'); }
+#container { margin: 0 auto; width: 960px; background: #719684 url('../images/bg_farmer_960.jpg') top center no-repeat; box-shadow: 0 0 25px #000; }
 #header { height: 150px; background: rgba(255,255,255,0.8); }
 	#logo { display: block; width: 250px; height: 150px; float: left; background: url('../images/logo.png') center center no-repeat; }
 	#nav { font-family:"Aovel Neo", Verdana; text-transform: lowercase; width: 710px; height: 149px; line-height: 89px; float: left; font-size: 25px; margin-bottom: 1px; }
@@ -7,16 +7,19 @@ html, body { padding: 0; margin: 0; background: url('../images/extra_clean_paper
 		#nav ul li a { display: block; color: #000; text-decoration: none; float: left; width: 177px; padding-top: 60px; text-align: center; }
 		#nav ul li a:hover { background: rgba(255,255,255,0.4); }
 		#nav ul li a.selected { box-shadow: inset 0 -5px 30px 0 rgba(20,20,0,0.2); background: rgba(255,255,255,0.4); }
-#content { font-family: Georgia;  }
-	.eye-grabber { margin-left: 40px; margin-top: 40px; width: 420px; position: relative; background: rgba(255,255,255,0.5); border-top: 10px solid rgba(255,255,255,0.7);  font-size: 20px; line-height: 30px; color: #2b3a32; text-shadow: 0 1px 0 #fff; }
+#content { font-family: "Georgia";  }
+	.eye-grabber { margin-left: 40px;width: 420px; position: relative; background: rgba(255,255,255,0.5); border-top: 10px solid rgba(255,255,255,0.7);  font-size: 18px; line-height: 30px; color: #2b3a32; text-shadow: 0 0 20px #fff, 0 0 10px #fff, 0 1px 0 #fff; }
 	.eye-grabber .text { padding: 30px 50px 40px 50px; }
         .eye-grabber .text p { margin: 0 0 10px 0; padding: 0; }
 
 #footer { height: 80px; line-height: 20px; margin-top: 40px; background: rgba(255,255,255,0.5); text-align: center; font-size: 15px; color: rgba(0,0,0,0.7); font-family: Arial, Helvetica, sans-serif; padding-top: 20px; }
 
+#main-title { font-family: "Aovel Neo"; font-size: 22px; text-align: center; }
 
+
+.introbox { line-height: 22px; margin: 40px; width: 840px; background: rgba(255,255,255,0.5); padding: 20px; color: #2b3a32; text-shadow: 0 1px 0 rgba(255,255,255,0.5); }
 .fullbox { line-height: 22px; margin: 40px; width: 840px; border-top: 10px solid rgba(255,255,255,0.7); background: rgba(255,255,255,0.5); padding: 20px; color: #2b3a32; text-shadow: 0 1px 0 rgba(255,255,255,0.5); }
-.fullbox h1 { float: right; font-size: 30px; line-height: 30px; margin: 0; padding: 0; background: rgba(255,255,255,0.7); position: relative; margin-top: -20px; padding: 10px 20px; font-family: "Aovel Neo"; color: #2b3a32; text-shadow: 0 1px 0 #fff;}
+.fullbox h1 { float: right; font-size: 30px; line-height: 30px; margin: 0; padding: 0; background: rgba(255,255,255,0.7); position: relative; margin-top: -20px; margin-left: 20px; padding: 10px 20px; font-family: "Aovel Neo"; color: #2b3a32; text-shadow: 0 1px 0 #fff;}
 .fullbox h2 { font-size: 22px; line-height: 25px; margin: 0 0 10px 0; padding: 0;font-family: "Aovel Neo"; color: #2b3a32; text-shadow: 0 1px 0 #fff;}
 
 #contact form { margin: 40px 20px; }
@@ -40,8 +43,9 @@ html, body { padding: 0; margin: 0; background: url('../images/extra_clean_paper
     text-decoration: none;
     margin-top: 20px;
 	/*basic styles*/
-	color: #eee; background-color: #99CF00;
+	color: #151; background-color: #99CF00;
 	text-align: center;  font-size: 30px;  line-height: 50px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.7);
  
  
 	/*gradient styles*/
@@ -66,7 +70,7 @@ html, body { padding: 0; margin: 0; background: url('../images/extra_clean_paper
 	line-height: 35px;
     margin: 0; padding: 0;
 	font-family: helvetica, sans-serif;
-    text-shadow: 0 -1px 0 #0a0;
+    text-shadow: 0 1px 0 #c3f83a;
 }
  
 .button p {
