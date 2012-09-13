@@ -21,7 +21,7 @@ html, body { padding: 0; margin: 0; background: url('../images/paper.png'); }
 .fullbox { line-height: 22px; margin: 40px; width: 880px; border-top: 2px solid rgba(255,255,255,1); background: rgba(255,255,255,0.5); padding: 0px; color: #2b3a32; text-shadow: 0 1px 0 rgba(255,255,255,0.5); }
 .fullbox h1 { font-size: 30px; line-height: 30px; margin: 0; padding: 0; background: rgba(255,255,255,0.7); position: relative; padding: 10px 40px; font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif; color: #2b3a32; text-shadow: 0 1px 0 #fff; font-weight: normal;}
 .fullbox h2 { font-size: 22px; line-height: 25px; margin: 20px 0 10px 0; padding: 0;font-family: "Aovel Neo"; color: #2b3a32; text-shadow: 0 1px 0 #fff; font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: normal; }
-.fullbox .inner { padding: 20px 40px; line-height: 25px; }
+.fullbox .inner { clear: both; padding: 20px 40px; line-height: 25px; }
 
 p { margin: 0; padding: 0; }
 
@@ -41,6 +41,13 @@ p { margin: 0; padding: 0; }
 
 
 .fullbox img {  margin: 0 15px 10px 0; padding: 1px; }
+
+
+.sub-nav { position: relative; font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif; }
+.sub-nav a { background: rgba(255,255,255,0.3); display: block; float: left; line-height: 100px; width: 25%; text-align: center; color: #000; text-decoration: none; position: relative; border-top: 2px solid #fff; margin-top: -2px;}
+.sub-nav a.selected { background: rgba(255,255,255,0.7); border: 2px solid #fff; border-top: none; margin: 0 -2px -2px -2px; }
+.sub-nav a .arrow { display: none; position: absolute; bottom: 0; left: 50%; margin: 0 0 -20px -15px; width: 30px; height: 20px; background: url('../images/nav-arrow.png') top left no-repeat; }
+.sub-nav a.selected .arrow { display: block; }
 
 
 .button {
