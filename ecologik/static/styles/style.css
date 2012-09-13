@@ -44,7 +44,7 @@ p { margin: 0; padding: 0; }
 
 
 .sub-nav { position: relative; font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif; }
-.sub-nav a { background: rgba(255,255,255,0.3); display: block; float: left; line-height: 100px; width: 25%; text-align: center; color: #000; text-decoration: none; position: relative; border-top: 2px solid #fff; margin-top: -2px;}
+.sub-nav a { background: rgba(255,255,255,0.5); display: block; float: left; line-height: 100px; width: 25%; text-align: center; color: #000; text-decoration: none; position: relative; border-top: 2px solid #fff; margin-top: -2px;}
 .sub-nav a.selected { background: rgba(255,255,255,0.7); border: 2px solid #fff; border-top: none; margin: 0 -2px -2px -2px; }
 .sub-nav a .arrow { display: none; position: absolute; bottom: 0; left: 50%; margin: 0 0 -20px -15px; width: 30px; height: 20px; background: url('../images/nav-arrow.png') top left no-repeat; }
 .sub-nav a.selected .arrow { display: block; }
