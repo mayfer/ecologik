@@ -17,7 +17,9 @@ urlpatterns = patterns('',
 
 	url(r'^$', 'ecologik.views.index', name='index'),
 	url(r'^services/?$', 'ecologik.views.services', name='services'),
-	url(r'^plants/?$', 'ecologik.views.plants', name='plants'),
 	url(r'^about/?$', 'ecologik.views.about', name='about'),
 	url(r'^contact/?$', 'ecologik.views.contact', name='contact'),
+
+	url(r'^plants/?$', 'ecologik.views.plants', name='plants'),
+	url(r'^plants/(crops|herbs|shrubs|trees)/?$', 'ecologik.views.plants', name='plants-section'),
 )

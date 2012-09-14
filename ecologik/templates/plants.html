@@ -1,32 +1,57 @@
 {% extends "base.html" %}
-{% block title %}Home{% endblock %}
+{% block title %}Plants{% endblock %}
 {% block content %}
 
 <div class='fullbox'>
     <h1>Plants Index</h1>
     <div class='sub-nav'>
-        <a href='#'>
+        <a href='{% url plants-section "crops" %}' {% if section == "crops" %}class='selected'{% endif %}>
             Crops
             <div class='arrow'></div>
         </a>
-        <a href='#'>
+        <a href='{% url plants-section "herbs" %}' {% if section == "herbs" %}class='selected'{% endif %}>
             Herbs
             <div class='arrow'></div>
         </a>
-        <a href='#' class='selected'>
+        <a href='{% url plants-section "shrubs" %}' {% if section == "shrubs" %}class='selected'{% endif %}>
             Shrubs
             <div class='arrow'></div>
         </a>
-        <a href='#'>
+        <a href='{% url plants-section "trees" %}' {% if section == "trees" %}class='selected'{% endif %}>
             Trees
             <div class='arrow'></div>
         </a>
     </div>
 
     <div class='inner'>
-        <h2>Plants for your Balcony, Garden and Backyard</h2>
-        We provide a large selection of plants and vegetation, ranging from crops, to trees, to edible flowers. Select a category above to begin exploring.
-        <img src='{{ STATIC_URL }}images/plants_preview.jpg' style='border: 3px solid rgba(255,255,255,0.7); border-radius: 5px; width: 790px; margin: 20px auto; display: block;' >
+        <div class='plants'>
+            {% if section == 'index' %}
+                <h2>Plants for your Balcony, Garden and Backyard</h2>
+                We provide a large selection of plants and vegetation, ranging from crops, to trees, to edible flowers. Select a category above to begin exploring.
+                <img src='{{ STATIC_URL }}images/plants_preview.jpg' style='border: 3px solid rgba(255,255,255,0.7); border-radius: 5px; width: 790px; margin: 20px auto; display: block;' >
+            {% else %}
+                {% for plant in plants %}
+                    <img src='{{ STATIC_URL }}images/plants/{{ plant.image }}'>
+                    <div class='plant-info'>
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <td>
+                                    <h2>{{ plant.name }}</h2>
+                                </td>
+                            </tr>
+                            {% for title, content in plant.description.items %}
+                                <tr>
+                                    <th>{{ title }}</th>
+                                    <td>{{ content }}</th>
+                                </tr>
+                            {% endfor %}
+                        </table>
+                    </div>
+                    <div class='divider'></div>
+                {% endfor %}
+            {% endif %}
+        </div>
     </div>
 </div>
 

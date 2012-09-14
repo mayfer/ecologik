@@ -20,12 +20,17 @@ html, body { padding: 0; margin: 0; background: url('../images/paper.png'); }
 .introbox { line-height: 22px; margin: 40px; width: 840px; background: rgba(255,255,255,0.5); padding: 20px; color: #2b3a32; text-shadow: 0 1px 0 rgba(255,255,255,0.5); }
 .fullbox { line-height: 22px; margin: 40px; width: 880px; border-top: 2px solid rgba(255,255,255,1); background: rgba(255,255,255,0.5); padding: 0px; color: #2b3a32; text-shadow: 0 1px 0 rgba(255,255,255,0.5); }
 .fullbox h1 { font-size: 30px; line-height: 30px; margin: 0; padding: 0; background: rgba(255,255,255,0.7); position: relative; padding: 10px 40px; font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif; color: #2b3a32; text-shadow: 0 1px 0 #fff; font-weight: normal;}
-.fullbox h2 { font-size: 22px; line-height: 25px; margin: 20px 0 10px 0; padding: 0;font-family: "Aovel Neo"; color: #2b3a32; text-shadow: 0 1px 0 #fff; font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: normal; }
+.fullbox h2 { color: #000; clear: both; font-size: 22px; line-height: 25px; margin: 20px 0 10px 0; padding: 0;font-family: "Aovel Neo"; text-shadow: 0 1px 0 #fff; font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif; font-weight: normal; }
 .fullbox .inner { clear: both; padding: 20px 40px; line-height: 25px; }
 
 p { margin: 0; padding: 0; }
+.inner p { margin: 10px 0; }
+.inner img { border: 5px solid rgba(255,255,255,0.7); border-radius: 3px; }
 
 #home-title { font-family: "Aovel Neo"; font-size: 30px; margin-bottom: 15px; }
+
+.float-right { float: right; margin: 0 0 15px 15px; }
+.float-left { float: left; margin: 0 15px 15px 0; }
 
 
 #contact form {  }
@@ -40,14 +45,32 @@ p { margin: 0; padding: 0; }
 /* @font-face kit by Fonts2u (http://www.fonts2u.com) */ @font-face {font-family:"Aovel Neo";src:url("../fonts/aOVELNeo_r.eot?") format("eot"),url("../fonts/aOVELNeo_r.woff") format("woff"),url("../fonts/aOVELNeo_r.ttf") format("truetype"),url("../fonts/aOVELNeo_r.svg#AovelNeo") format("svg");font-weight:normal;font-style:normal;}
 
 
-.fullbox img {  margin: 0 15px 10px 0; padding: 1px; }
+.fullbox img {  padding: 1px; }
+img.icon { border: none; padding: none; }
 
+strong { font-weight: normal; color: #000; border-bottom: 1px solid #aaa; }
+
+ul.goals { margin: 0; padding: 0; list-style: none; }
+ul.goals li { padding: 5px 0 15px 25px; margin: 0; background: url('../images/list-bullet.png') 0px 8px no-repeat; }
+
+
+.plants { overflow: auto; margin-top: 20px; }
+.plants img { float: left; margin: 0 15px 10px 0; width: 200px; }
+.plants .plant-info { float: left; }
+.plants .plant-info h2 { margin: 0 0 5px 0;}
+.plants .divider { clear: both; border-bottom: 1px solid rgba(255,255,255,0.3); border-top: 1px solid rgba(100,100,100,0.2); margin: 10px; }
+
+.plants table { font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif; line-height: 16px; font-size: 14px; margin-bottom: 20px; color: #000; }
+.plants table th { text-align: right; padding-right: 10px; color: #555; font-weight: normal; }
 
 .sub-nav { position: relative; font-family: 'HelveticaNeue-Light','Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,sans-serif; }
 .sub-nav a { background: rgba(255,255,255,0.5); display: block; float: left; line-height: 100px; width: 25%; text-align: center; color: #000; text-decoration: none; position: relative; border-top: 2px solid #fff; margin-top: -2px;}
 .sub-nav a.selected { background: rgba(255,255,255,0.7); border: 2px solid #fff; border-top: none; margin: 0 -2px -2px -2px; }
 .sub-nav a .arrow { display: none; position: absolute; bottom: 0; left: 50%; margin: 0 0 -20px -15px; width: 30px; height: 20px; background: url('../images/nav-arrow.png') top left no-repeat; }
 .sub-nav a.selected .arrow { display: block; }
+
+.sub-nav a:first-child { border-left: none; margin-left: 0; }
+.sub-nav a:last-child { border-right: none; margin-right: 0; }
 
 
 .button {
